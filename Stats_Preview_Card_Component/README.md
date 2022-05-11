@@ -39,9 +39,10 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- [JavaScript](https://www.javascript.com)
 
 ### Useful Resources
+
+[Delftstack | CSS Change Image Color](https://www.delftstack.com/howto/css/css-change-image-color/#:~:text=We%20can%20change%20the%20image,without%20forming%20an%20actual%20shadow.)
 
 ## Author
 
