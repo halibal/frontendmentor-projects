@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-with-html-css-js-r1vIGfdIq)
+- Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-html-css-rkxZxj58c)
   
-- Live Site URL: [Halibal | Stats Preview Card Component](https://halibal.github.io/ping-single-column-coming-soon-page/)
+- Live Site URL: [Halibal | Stats Preview Card Component](https://halibal.github.io/frontendmentor-projects/Stats_Preview_Card_Component/index.html)
 
 ### Built with
 
