@@ -11,6 +11,7 @@ This is a solution to the [Stats Preview Card Component Challenge on Frontend Me
     - [Screenshot](#screenshot)
     - [Links](#links)
     - [Built with](#built-with)
+    - [Useful Codes](#useful-codes)
     - [Useful Resources](#useful-resources)
   - [Author](#author)
 
@@ -40,9 +41,21 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 
+### Useful Codes
+
+```CSS
+img {
+    vertical-align: middle;
+}
+```
+
 ### Useful Resources
 
-[Delftstack | CSS Change Image Color](https://www.delftstack.com/howto/css/css-change-image-color/#:~:text=We%20can%20change%20the%20image,without%20forming%20an%20actual%20shadow.)
+- [Stackoverflow | Always 3px Margin Add Up at Image Bottom](https://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom)
+
+- [Delftstack | CSS Change Image Color](https://www.delftstack.com/howto/css/css-change-image-color/#:~:text=We%20can%20change%20the%20image,without%20forming%20an%20actual%20shadow.)
+
+- [Developer Mozilla | CSS Mix Blend Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode?retiredLocale=tr)
 
 ## Author
 
