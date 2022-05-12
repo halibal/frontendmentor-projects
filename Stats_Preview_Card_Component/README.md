@@ -25,10 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Version]()
-![Desktop Version Active State]()
-![Mobile Version]()
-![Desktop Version Active State]()
+<p align="center">
+ <img src="./images/desktop_version.png">
+ <img src="./images/mobile_version.png">
+</p>
 
 ### Links
 
