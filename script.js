@@ -24,14 +24,13 @@ function countDown() {
     console.log("Today: ", currentDayCount);
 
     if (targetDayCount == currentDayCount) {
-        let daysLeft = (targetDayCount - currentDayCount) + (targetDate1.year - year)*365;
+        let daysAgo = (targetDayCount - currentDayCount) + (targetDate1.year - year)*365;
         console.log(targetDayCount - currentDayCount);
-        console.log("targetDayCount >= currentDayCount: ", daysLeft);
         uploadDate1.innerHTML = `uploaded today`
     } else {
-        let daysLeft = 365 - (currentDayCount - targetDayCount) + ((targetDate1.year - year)-1)*365;
-        console.log("targetDayCount < currentDayCount: ", daysLeft);
-        uploadDate1.innerHTML = `uploaded ${daysLeft} days ago`
+        let daysAgo = 365 - (currentDayCount - targetDayCount) + ((targetDate1.year - year)-1)*365;
+        console.log("targetDayCount < currentDayCount: ", daysAgo);
+        uploadDate1.innerHTML = `uploaded ${daysAgo} days ago`
     }
 }
 
