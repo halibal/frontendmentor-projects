@@ -2,12 +2,12 @@
 
 :root {
     /* neutral */
-    --cl-awht: hsl(0, 0%, 98%),
-    --cl-mgry: hsl(0, 0%, 41%),
-    --cl-ablk: hsl(0, 0%, 8%),
+    --cl-awht: hsl(0, 0%, 98%);
+    --cl-mgry: hsl(0, 0%, 41%);
+    --cl-ablk: hsl(0, 0%, 8%);
     
     /* f-size */
-    --fs-p: 18px,
+    --fs-p: 18px;
     --ff-ep: 'Epilogue', sans-serif;
 }
 
@@ -20,14 +20,16 @@ a {
 body {
     position: relative;
     min-height: 100vh;
+    font-size: var(--fs-p);
 }
 
-/* footer {
+footer {
     position: absolute;
     bottom: 0;
     font-size: 11px;
     text-align: center;
-} */
+    width: 100%;
+}
 
 footer a {
     color: hsl(228, 45%, 44%);
@@ -37,3 +39,23 @@ footer a {
 
 
 /* Classes */
+
+.moreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cl-awht);
+    font-size: 0.9em;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    border-radius: 0.9em;
+    border: none;
+    background-color: var(--cl-ablk);
+    font-family: var(--ff-ep);
+}
+
+.text p {
+    color: var(--cl-mgry);
+    font-size: 1.15em;
+}
