@@ -20,6 +20,7 @@ a {
 body {
     position: relative;
     min-height: 100vh;
+    margin: 0;
     font-size: var(--fs-p);
 }
 
@@ -35,10 +36,22 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 
+main {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 /* IDs */
 
 
 /* Classes */
+
+
+.imageDesktop {
+    width: 100%;
+    height: 100%;
+}
 
 .moreBtn {
     display: flex;
