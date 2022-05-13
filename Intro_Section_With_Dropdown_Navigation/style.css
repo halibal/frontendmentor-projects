@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    /* neutral */
+    --cl-awht: hsl(0, 0%, 98%),
+    --cl-mgry: hsl(0, 0%, 41%),
+    --cl-ablk: hsl(0, 0%, 8%),
+    
+    /* f-size */
+    --fs-p: 18px,
+    --ff-ep: 'Epilogue', sans-serif;
+}
+
+/* elements */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+} */
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* IDs */
+
+
+/* Classes */
