@@ -40,6 +40,19 @@ main {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px;
 }
 
 /* IDs */
@@ -47,6 +60,17 @@ main {
 
 /* Classes */
 
+.companyLogos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8%;
+
+}
+
+.companyLogos img {
+}
 
 .imageDesktop {
     width: 100%;
@@ -66,9 +90,16 @@ main {
     border: none;
     background-color: var(--cl-ablk);
     font-family: var(--ff-ep);
+    margin: auto;
+}
+
+.text {
+    font-family: var(--ff-ep);
+    margin: 6% 4%;
 }
 
 .text p {
     color: var(--cl-mgry);
-    font-size: 1.15em;
+    font-size: 0.9em;
+    line-height: 1.6;
 }
