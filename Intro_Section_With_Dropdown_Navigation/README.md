@@ -48,11 +48,8 @@ Users should be able to:
 
 ### Useful Resources
 
-- [Stackoverflow | Always 3px Margin Add Up at Image Bottom](https://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom)
-
-- [Delftstack | CSS Change Image Color](https://www.delftstack.com/howto/css/css-change-image-color/#:~:text=We%20can%20change%20the%20image,without%20forming%20an%20actual%20shadow.)
-
-- [Developer Mozilla | CSS Mix Blend Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode?retiredLocale=tr)
+- [GeeksforGeeks | HTML <img> align Attribute](https://www.geeksforgeeks.org/html-img-align-attribute/)
+- [Developer Mozilla | Shorthand Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
 ## Author
 

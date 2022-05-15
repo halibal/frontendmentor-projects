@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--cl-mgry);
+}
+
 body {
     position: relative;
     min-height: 100vh;
@@ -57,8 +61,35 @@ nav {
 
 /* IDs */
 
+#register {
+    border: 2px solid var(--cl-mgry);
+    border-radius: 1em;
+}
+
+
 
 /* Classes */
+
+.closeDiv {
+    margin: 0 !important;
+}
+
+.companyDiv {
+    display: flex;
+    flex-direction: column;
+    margin:0 !important;
+}
+
+.companyDiv img, 
+.featuresDiv img {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.companyDiv:hover, 
+.featuresDiv:hover {
+    cursor: pointer;
+}
 
 .companyLogos {
     width: 100%;
@@ -66,11 +97,43 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-top: 8%;
-
 }
 
-.companyLogos img {
+.dropdownCompany {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px !important;
 }
+
+.dropdownFeatures {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownCompany a {
+    display: flex;
+    align-items: center;
+    margin: 0px 14%;
+}
+
+.dropdownFeatures a {
+    display: flex;
+    align-items: center;
+    margin: 0px 6.5%;
+}
+
+.dropdownFeatures a img {
+    margin-right: 9%;
+    width: 20px;
+}
+
+.featuresDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 0px !important;
+}
+
 
 .imageDesktop {
     width: 100%;
@@ -81,7 +144,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--cl-awht);
     font-size: 0.9em;
     font-weight: 600;
     height: 50px;
@@ -91,6 +153,50 @@ nav {
     background-color: var(--cl-ablk);
     font-family: var(--ff-ep);
     margin: auto;
+    color: var(--cl-awht);
+}
+
+.moreBtn:visited {
+    color: var(--cl-awht);
+}
+
+.loginAndRegister {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginAndRegister a {
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    background-color: var(--cl-awht);
+    font-family: var(--ff-ep);
+    color: var(--cl-mgry);
+    font-size: 16px;
+    padding: 22px;
+}
+
+.sidebar div {
+    margin: 6.5% 0;
 }
 
 .text {
@@ -102,4 +208,8 @@ nav {
     color: var(--cl-mgry);
     font-size: 0.9em;
     line-height: 1.6;
+}
+
+.hide {
+    display: none !important;
 }

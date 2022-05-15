@@ -23,11 +23,79 @@
     <body>
         <header>
             <nav>
-                <div class="snapLogo">
-                    <img src="./images/logo.svg" alt="snap logo">
+                <div>
+                    <a href="#" id="snapLogo">
+                        <img src="./images/logo.svg" alt="snap logo">
+                    </a>
                 </div>
-                <div class="sidebar">
-                    <img src="./images/icon-menu.svg" alt="menu icon">
+                <div>
+                    <a href="#" id="menuIcon">
+                        <img src="./images/icon-menu.svg" alt="menu icon">
+                    </a>
+                </div>
+                <div class="sidebar hide">
+                    <div class="closeDiv">
+                        <a href="#" id="sidebarClose">
+                            <img src="./images/icon-close-menu.svg" alt="sidebar close button" align="right">
+                        </a>
+                    </div>
+                    <div class="featuresDiv">
+                        <a href="#" id="features">
+                            Features
+                            <img 
+                            id="featuresArrow"
+                            src="./images/icon-arrow-down.svg" 
+                            alt="down arrow to expand features section">
+                        </a>
+                        <div class="dropdownFeatures">
+                            <a href="#">
+                                <img src="./images/icon-todo.svg" alt="todo icon">
+                               <p>Todo List</p>
+                            </a>
+                            <a href="#">
+                                <img src="./images/icon-calendar.svg" alt="calendar icon">
+                                <p>Calendar</p>
+                            </a>
+                            <a href="#">
+                                <img src="./images/icon-reminders.svg" alt="reminders icon">
+                                <p>Reminders</p>
+                            </a>
+                            <a href="#">
+                                <img src="./images/icon-planning.svg" alt="planning icon">
+                                <p>Planning</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="companyDiv">
+                        <a href="#" id="company">
+                            Company
+                            <img 
+                            id="companyArrow" 
+                            src="./images/icon-arrow-down.svg" 
+                            alt="down arrow to expand company section">
+                        </a>
+                        <div class="dropdownCompany">
+                            <a href="#">
+                                <p>History</p>
+                            </a>
+                            <a href="#">
+                                <p>Our Team</p>
+                            </a>
+                            <a href="#">
+                                <p>Blog</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div>
+                        <a href="#">About</a>
+                    </div>
+                    <div class="loginAndRegister">
+                        <a href="#">Login</a>
+                        <a href="#" id="register">Register</a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -59,6 +127,7 @@
 
         <!-- js bootstrap -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-
+        <!-- js local -->
+        <script src="script.js"></script>
     </body>
 </html>
