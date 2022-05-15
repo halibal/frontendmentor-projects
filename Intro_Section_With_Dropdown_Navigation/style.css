@@ -66,6 +66,11 @@ nav {
     border-radius: 1em;
 }
 
+#snapLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* Classes */
@@ -212,4 +217,58 @@ nav {
 
 .hide {
     display: none !important;
+}
+
+.wideScreen {
+    display: none;
+}
+
+@media screen and (min-width: 1100px) {
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 15px;
+    }
+
+    .companyDiv {
+        position: relative;
+    }
+
+    .dropdownCompany {
+        position: absolute;
+        top: 40px;
+        background-color: var(--cl-awht);
+        width: 180px;
+        box-shadow: 0px 5px 10px var(--cl-mgry);
+        border-radius: 0.6em;
+    }
+
+    .dropdownFeatures {
+        position: absolute;
+        top: 40px;
+        background-color: var(--cl-awht);
+        width: 200px;
+        box-shadow: 0px 5px 10px var(--cl-mgry);
+        border-radius: 0.6em;
+    }
+
+    .featuresDiv {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: initial;
+    }
+
+    .menuDiv {
+        display: none;
+    }
+
+    .wideScreen {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }

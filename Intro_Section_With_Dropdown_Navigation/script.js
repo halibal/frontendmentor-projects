@@ -34,3 +34,27 @@ function openSideBar() {
 
 
 // 
+
+features.addEventListener('click', openFeaturesDropDown);
+company.addEventListener('click', openCompanyDropDown);
+
+
+function openFeaturesDropDown() {
+    if (dropdownFeatures.classList.contains('hide')) {
+        dropdownFeatures.classList.remove('hide');
+        featuresArrow.style.transform = '0deg'
+    } else {
+        dropdownFeatures.classList.add('hide');
+        featuresArrow.style.transform = '180deg'
+    }
+}
+
+function openCompanyDropDown() {
+    if (dropdownCompany.classList.contains('hide')) {
+        dropdownCompany.classList.remove('hide');
+        companyArrow.style.transform = '0deg'
+    } else {
+        dropdownCompany.classList.add('hide');
+        companyArrow.style.transform = '180deg'
+    }
+}
