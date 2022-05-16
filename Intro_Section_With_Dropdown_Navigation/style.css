@@ -40,10 +40,20 @@ footer {
     font-size: 11px;
     text-align: center;
     width: 100%;
+    font-family: var(--ff-ep);
 }
 
 footer a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(266, 84%, 58%);
+}
+
+footer a:visited {
+    color: hsl(266, 84%, 58%);
+}
+
+footer a:hover {
+    color: hsl(266, 84%, 58%);
+    font-weight: bold;
 }
 
 main {
@@ -261,6 +271,7 @@ nav {
     main {
         display: flex;
         width: 100%;
+        height: auto;
     }
 
     nav {
@@ -277,6 +288,7 @@ nav {
 
     .companyLogos {
         margin-top: 11%;
+        justify-content: space-between;
     }
 
     .dropdownCompany {
@@ -376,7 +388,7 @@ nav {
     }
 
     .text {
-        margin-right: 100px;
+        margin-right: 150px;
         margin-top: 0;
         margin-bottom: 0;
         height: 100%;
@@ -385,13 +397,12 @@ nav {
     .text h1 {
         font-size: 4.6em;
         margin-top: 70px;
-        margin-right: 11%;
     }
 
     .text p {
         font-size: 1.2em;
         margin-bottom: 50px;
-        margin-right: 20%;
+        margin-right: 50px;
     }
 
     .wideScreen {
