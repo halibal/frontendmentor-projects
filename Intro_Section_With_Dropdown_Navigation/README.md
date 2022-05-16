@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-html-css-rkxZxj58c)
+- Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-html-css-js-BJE47Xewq)
   
 - Live Site URL: [Halibal | Intro Section With Dropdown Navigation](https://halibal.github.io/frontendmentor-projects/Intro_Section_With_Dropdown_Navigation/index.html)
 
