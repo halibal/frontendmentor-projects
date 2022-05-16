@@ -42,19 +42,19 @@ company.addEventListener('click', openCompanyDropDown);
 function openFeaturesDropDown() {
     if (dropdownFeatures.classList.contains('hide')) {
         dropdownFeatures.classList.remove('hide');
-        featuresArrow.style.transform = '0deg'
+        featuresArrow.classList.add('upsideDown');
     } else {
         dropdownFeatures.classList.add('hide');
-        featuresArrow.style.transform = '180deg'
+        featuresArrow.classList.remove('upsideDown');
     }
 }
 
 function openCompanyDropDown() {
     if (dropdownCompany.classList.contains('hide')) {
         dropdownCompany.classList.remove('hide');
-        companyArrow.style.transform = '0deg'
+        companyArrow.classList.add('upsideDown');
     } else {
         dropdownCompany.classList.add('hide');
-        companyArrow.style.transform = '180deg'
+        companyArrow.classList.remove('upsideDown');
     }
 }

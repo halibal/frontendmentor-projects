@@ -15,10 +15,17 @@
 
 a {
     text-decoration: none;
+    font-family: var(--ff-ep);
+    font-size: 0.8em;
 }
 
 a:visited {
     color: var(--cl-mgry);
+}
+
+a:hover {
+    color: var(--cl-ablk);
+    font-weight: bold;
 }
 
 body {
@@ -121,10 +128,20 @@ nav {
     margin: 0px 14%;
 }
 
+.dropdownCompany a:hover {
+    color: grey;
+    transform: scale(1.1);
+}
+
 .dropdownFeatures a {
     display: flex;
     align-items: center;
     margin: 0px 6.5%;
+}
+
+.dropdownFeatures a:hover {
+    color: var(--cl-mgry);
+    transform: scale(1.01);
 }
 
 .dropdownFeatures a img {
@@ -139,8 +156,11 @@ nav {
     margin-bottom: 0px !important;
 }
 
+.imageDesktopDiv {
+    display: none;
+}
 
-.imageDesktop {
+.imageMobile {
     width: 100%;
     height: 100%;
 }
@@ -204,6 +224,11 @@ nav {
     margin: 6.5% 0;
 }
 
+.snapLogoDiv {
+    margin-left: 2%;
+    margin-right: 4.5%;
+}
+
 .text {
     font-family: var(--ff-ep);
     margin: 6% 4%;
@@ -219,12 +244,22 @@ nav {
     display: none !important;
 }
 
+
+.upsideDown {
+    transform: rotate(180deg);
+}
+
 .wideScreen {
     display: none;
 }
 
 @media screen and (min-width: 1100px) {
-    
+
+    main {
+        display: flex;
+        width: 100%;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -237,20 +272,25 @@ nav {
         position: relative;
     }
 
+    .companyLogos {
+        margin-top: 15%;
+    }
+
     .dropdownCompany {
         position: absolute;
         top: 40px;
         background-color: var(--cl-awht);
-        width: 180px;
+        width: 150px;
         box-shadow: 0px 5px 10px var(--cl-mgry);
         border-radius: 0.6em;
+        align-items: center;
     }
 
     .dropdownFeatures {
         position: absolute;
         top: 40px;
         background-color: var(--cl-awht);
-        width: 200px;
+        width: 190px;
         box-shadow: 0px 5px 10px var(--cl-mgry);
         border-radius: 0.6em;
     }
@@ -261,13 +301,96 @@ nav {
         margin-bottom: initial;
     }
 
+    .imageDesktop {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imageDesktopDiv {
+        display: initial;
+        width: 58%;
+        min-height: 590px;
+    }
+
+    .imageDiv {
+        width: 50%;
+        display: none;
+    }
+
+    .loginAndRegister {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 200px;
+        margin-left: auto;
+        margin-right: 25px;
+    }
+    
+    .loginAndRegister a {
+        text-align: center;
+    }
+
+    .mainDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
     .menuDiv {
         display: none;
     }
 
+    .moreBtn {
+        height: 60px;
+        width: 160px;
+        font-family: var(--ff-ep);
+        margin: 0;
+        color: var(--cl-awht);
+    }
+
+    .moreBtn:hover {
+        border: 1px solid var(--cl-ablk);
+        background-color: var(--cl-awht);
+        color: var(--cl-ablk);
+    }
+
+    .navItem {
+        width: 100px;
+    }
+
+    .textPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+        height: 100%;
+        min-height: 590px;
+    }
+
+    .text {
+        margin-right: 15%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .text h1 {
+        font-size: 4.2em;
+        margin-top: 70px;
+        margin-right: 11%;
+    }
+
+    .text p {
+        font-size: 1em;
+        margin-bottom: 50px;
+        margin-right: 20%;
+    }
+
     .wideScreen {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
         width: 100%;
     }
