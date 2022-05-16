@@ -6,9 +6,6 @@
 
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-        <!-- bootstrap css -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,19 +14,27 @@
         <!-- css local -->
         <link rel="stylesheet" href="style.css">
         
-        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <title>Frontend Mentor | Intro Section With Dropdown Navigation</title>
 
     </head>
     <body>
         <header>
+
+            <!-----------------------------------Navigations Starts----------------------------------->
             <nav>
+
+                <!-- Logo Starts -->
                 <div class="snapLogoDiv">
                     <a href="#" id="snapLogo">
                         <img src="./images/logo.svg" alt="snap logo">
                     </a>
                 </div>
+                <!-- Logo Ends -->
+
+                <!-----------------------------------Desktop Navigation Bar Starts----------------------------------->
                 <div class="wideScreen">
                     
+                    <!-- featuresDesktop starts -->
                     <div class="featuresDiv">
                         <a href="#" id="features">
                             Features
@@ -57,6 +62,9 @@
                             </a>
                         </div>
                     </div>
+                    <!-- featuresDesktop ends -->
+
+                    <!-- companyDesktop starts -->
                     <div class="companyDiv">
                         <a href="#" id="company">
                             Company
@@ -77,6 +85,7 @@
                             </a>
                         </div>
                     </div>
+                    <!-- companyDesktop ends -->
                     <div class="navItem">
                         <a href="#">Careers</a>
                     </div>
@@ -88,26 +97,36 @@
                         <a href="#" id="register">Register</a>
                     </div>
                 </div>
+                <!-----------------------------------Desktop Navigation Bar Ends----------------------------------->
+
+                <!-----------------------------------Mobile Side-Bar Starts----------------------------------->
+
+                <!-- menu icon starts -->
                 <div class="menuDiv">
                     <a href="#" id="menuIcon">
                         <img src="./images/icon-menu.svg" alt="menu icon">
                     </a>
                 </div>
+                <!-- menu icon ends -->
+
+                <!-- Off-Canvas Navigation Start -->
                 <div class="sidebar hide">
                     <div class="closeDiv">
                         <a href="#" id="sidebarClose">
                             <img src="./images/icon-close-menu.svg" alt="sidebar close button" align="right">
                         </a>
                     </div>
+
+                    <!-- featuresMobile starts -->
                     <div class="featuresDiv">
-                        <a href="#" id="features">
+                        <a href="#" id="featuresMobile">
                             Features
                             <img 
-                            id="featuresArrow"
+                            id="featuresArrowMobile"
                             src="./images/icon-arrow-down.svg" 
                             alt="down arrow to expand features section">
                         </a>
-                        <div class="dropdownFeatures">
+                        <div class="dropdownFeatures dropdownFeaturesMobile hide">
                             <a href="#">
                                 <img src="./images/icon-todo.svg" alt="todo icon">
                                <p>Todo List</p>
@@ -126,15 +145,18 @@
                             </a>
                         </div>
                     </div>
+                    <!-- featuresMobile ends -->
+
+                    <!-- companyMobile starts -->
                     <div class="companyDiv">
-                        <a href="#" id="company">
+                        <a href="#" id="companyMobile">
                             Company
                             <img 
-                            id="companyArrow" 
+                            id="companyArrowMobile" 
                             src="./images/icon-arrow-down.svg" 
                             alt="down arrow to expand company section">
                         </a>
-                        <div class="dropdownCompany">
+                        <div class="dropdownCompany dropdownCompanyMobile hide">
                             <a href="#">
                                 <p>History</p>
                             </a>
@@ -146,6 +168,7 @@
                             </a>
                         </div>
                     </div>
+                    <!-- companyMobile ends -->
                     <div>
                         <a href="#">Careers</a>
                     </div>
@@ -157,13 +180,24 @@
                         <a href="#" id="register">Register</a>
                     </div>
                 </div>
+                <!-- Off-Canvas Navigation Ends -->
+
+                <!-----------------------------------Mobile Side-Bar Ends----------------------------------->
             </nav>
+            <!-----------------------------------Navigations Ends----------------------------------->
         </header>
+
+        <!-----------------------------------Main Starts----------------------------------->
         <main>
             <div class="mainDiv">
+
+                <!-- image mobile starts -->
                 <div class="imageDiv">
                     <img class="imageMobile" src="./images/image-hero-mobile.png" alt="a guy holding laptop">
                 </div>
+                <!-- image mobile ends -->
+
+                <!-- text panel starts -->
                 <div class="textPanel">
                     <div class="text">
                         <h1>Make remote work</h1>
@@ -177,24 +211,29 @@
                         </div>
                     </div>
                 </div>
+                <!-- text panel ends -->
+
+                <!-- image desktop starts -->
                 <div class="imageDesktopDiv">
                     <img class="imageDesktop" src="./images/image-hero-desktop.png" alt="a guy holding laptop">
                 </div>
+                <!-- image desktop ends -->
+
             </div>
         </main>
+        <!-----------------------------------Main Ends----------------------------------->
 
         
 
         
-        
+        <!-----------------------------------Footer Starts----------------------------------->
         <footer>
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener noreferrer" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="https://github.com/halibal" rel="noopener noreferrer" target="_blank">Halil ALGUL</a>.
         </footer>
+        <!-----------------------------------Footer Ends----------------------------------->
 
-        <!-- js bootstrap -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-        <!-- js local -->
+        <!-----------------------------------JavaScript Local----------------------------------->
         <script src="script.js"></script>
     </body>
 </html>

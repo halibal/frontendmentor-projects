@@ -16,7 +16,7 @@
 a {
     text-decoration: none;
     font-family: var(--ff-ep);
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 a:visited {
@@ -89,7 +89,6 @@ nav {
 .companyDiv {
     display: flex;
     flex-direction: column;
-    margin:0 !important;
 }
 
 .companyDiv img, 
@@ -108,18 +107,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8%;
+    margin-top: 15%;
 }
 
 .dropdownCompany {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px !important;
-}
-
-.dropdownFeatures {
-    display: flex;
-    flex-direction: column;
 }
 
 .dropdownCompany a {
@@ -131,6 +125,11 @@ nav {
 .dropdownCompany a:hover {
     color: grey;
     transform: scale(1.1);
+}
+
+.dropdownFeatures {
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdownFeatures a {
@@ -153,7 +152,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
-    margin-bottom: 0px !important;
+    margin-bottom: 5% !important;
 }
 
 .imageDesktopDiv {
@@ -238,6 +237,7 @@ nav {
     color: var(--cl-mgry);
     font-size: 0.9em;
     line-height: 1.6;
+    margin-bottom: 7%;
 }
 
 .hide {
@@ -254,6 +254,10 @@ nav {
 }
 
 @media screen and (min-width: 1100px) {
+    
+    a {
+        font-size: 0.8em;
+    }
 
     main {
         display: flex;
@@ -289,6 +293,7 @@ nav {
     .dropdownFeatures {
         position: absolute;
         top: 40px;
+        right: 10px;
         background-color: var(--cl-awht);
         width: 190px;
         box-shadow: 0px 5px 10px var(--cl-mgry);
@@ -298,7 +303,7 @@ nav {
     .featuresDiv {
         position: relative;
         margin-top: 0;
-        margin-bottom: initial;
+        margin-bottom: initial !important;
     }
 
     .imageDesktop {
