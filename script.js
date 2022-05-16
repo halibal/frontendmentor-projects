@@ -34,21 +34,31 @@ console.log("Year: ",year)
 // countdown function starts
 function countDown() {
     
+    // applying same thing to all projects
     for (let i=0; i<projectDates.length; i++) {
 
+        // finding what number the target day is equal to in 365 day loop
         let targetDayCount = ((projectDates[i].month)*30) + Math.floor((projectDates[i].month)/2) + projectDates[i].day;
         console.log("targetDayCount: ", targetDayCount);
-        let currentDayCount = ((month+1)*30) + Math.floor((month+1)/2) + day;
 
+        // finding what number the current day is equal to in 365 day loop
+        let currentDayCount = ((month+1)*30) + Math.floor((month+1)/2) + day;
         console.log("currentDayCount: ", currentDayCount);
 
+        // if dates are the same no need to go further:
         if (targetDayCount == currentDayCount) {
             uploadDates[i].innerHTML = `uploaded today`
-        } else if (projectDates[i].year == year) {
-            let daysAgo = 365 - (365 - (currentDayCount - targetDayCount));
+        } 
+
+        // if they are in the same year:
+        else if (projectDates[i].year == year) {
+            let daysAgo = (currentDayCount - targetDayCount);
             console.log("currentDayCount - targetDayCount: ", daysAgo);
             uploadDates[i].innerHTML = `uploaded ${daysAgo} days ago`
-        } else {
+        } 
+        
+        // if they have one or more year difference:
+        else {
             let daysAgo = Math.abs(365 - (currentDayCount - targetDayCount) + ((projectDates[i].year - year)-1)*365);
             console.log("currentDayCount - targetDayCount: ", daysAgo);
             uploadDates[i].innerHTML = `uploaded ${daysAgo} days ago`
