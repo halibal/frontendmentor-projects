@@ -39,7 +39,7 @@ Users should be able to:
 
 - Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-html-css-rkxZxj58c)
   
-- Live Site URL: [Halibal | Intro Section With Dropdown Navigation](https://halibal.github.io/frontendmentor-projects/Stats_Preview_Card_Component/index.html)
+- Live Site URL: [Halibal | Intro Section With Dropdown Navigation](https://halibal.github.io/frontendmentor-projects/Intro_Section_With_Dropdown_Navigation/index.html)
 
 ### Built with
 

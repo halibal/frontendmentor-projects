@@ -1,8 +1,9 @@
 const uploadDate1 = document.getElementById('uploadDate1');
 const uploadDate2 = document.getElementById('uploadDate2');
+const uploadDate3 = document.getElementById('uploadDate3');
 
 let currentDate = new Date()
-let uploadDates = [uploadDate1, uploadDate2]
+let uploadDates = [uploadDate1, uploadDate2, uploadDate3]
 
 let targetDate1 = {
     day: 12, 
@@ -16,10 +17,17 @@ let targetDate2 = {
     year: 2022
 }
 
+let targetDate3 = {
+    day: 10, 
+    month: 5,
+    year: 2022
+}
+
 let projectDates = [];
 
 projectDates.push(targetDate1);
 projectDates.push(targetDate2);
+projectDates.push(targetDate3);
 
 
 // reaching current date starts
