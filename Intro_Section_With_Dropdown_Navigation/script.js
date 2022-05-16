@@ -2,6 +2,9 @@
 const menuIcon = document.getElementById('menuIcon');
 const sidebar = document.querySelector('.sidebar');
 const sidebarClose = document.getElementById('sidebarClose');
+const moreBtn = document.querySelector('.moreBtn');
+const login = document.getElementById('login');
+const register = document.getElementById('register');
 
 // desktop
 const company = document.getElementById('company');
@@ -42,7 +45,7 @@ function openSideBar() {
 
 
 
-// desktop
+// desktop functions start
 
 features.addEventListener('click', openFeaturesDropDown);
 company.addEventListener('click', openCompanyDropDown);
@@ -76,7 +79,10 @@ function openCompanyDropDown() {
     }
 }
 
-// mobile
+// desktop functions end
+
+
+// mobile functions start
 
 featuresMobile.addEventListener('click', openFeaturesDropDownMobile);
 companyMobile.addEventListener('click', openCompanyDropDownMobile);
@@ -85,13 +91,9 @@ function openFeaturesDropDownMobile() {
     if (dropdownFeaturesMobile.classList.contains('hide')) {
         dropdownFeaturesMobile.classList.remove('hide');
         featuresArrowMobile.classList.add('upsideDown');
-        dropdownCompanyMobile.classList.add('hide');
-        companyArrowMobile.classList.remove('upsideDown');
     } else {
         dropdownFeaturesMobile.classList.add('hide');
         featuresArrowMobile.classList.remove('upsideDown');
-        dropdownCompanyMobile.classList.add('hide');
-        companyArrowMobile.classList.remove('upsideDown');
     }
 }
 
@@ -99,12 +101,28 @@ function openCompanyDropDownMobile() {
     if (dropdownCompanyMobile.classList.contains('hide')) {
         dropdownCompanyMobile.classList.remove('hide');
         companyArrowMobile.classList.add('upsideDown');
-        dropdownFeaturesMobile.classList.add('hide');
-        featuresArrowMobile.classList.remove('upsideDown');
     } else {
         dropdownCompanyMobile.classList.add('hide');
         companyArrowMobile.classList.remove('upsideDown');
-        dropdownFeaturesMobile.classList.add('hide');
-        featuresArrowMobile.classList.remove('upsideDown');
     }
+}
+
+// mobile functions end
+
+// additionals
+
+login.addEventListener('click', loginFunction);
+register.addEventListener('click', registerFunction);
+moreBtn.addEventListener('click', learnMoreFunction);
+
+function loginFunction(){
+    alert("Ops.. Seems like there is no such option yet");
+}
+
+function registerFunction(){
+    alert("Nice try! Did you really think you can register for smth at the moment?");
+}
+
+function learnMoreFunction(){
+    alert("Don't just stand there and read me! If you really want to learn stuff, go learn it somewhere else! This is not the place for it..");
 }
