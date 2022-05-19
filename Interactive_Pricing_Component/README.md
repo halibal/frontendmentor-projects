@@ -64,7 +64,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Useful Resources
 
-- []()
+- [W3Schools | Range Slider](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
 - []()
 
 ## Author

@@ -20,22 +20,66 @@
 	</head>
 	<body>
 
-		Simple, traffic-based pricing
-		Sign-up for our 30-day trial. No credit card required. 
+		<main>
 
-		Pageviews
-		$ /month
+			<!-- textPanel starts -->
+			<div class="textPanel">
+				<h1>Simple, traffic-based pricing</h1>
+				<p>Sign-up for our 30-day trial. <br /> No credit card required.</p>
+			</div>
+			<!-- textPanel ends -->
 
-		Monthly Billing
-		Yearly Billing 25% discount
+			<!-- pricePanel starts -->
+			<div class="pricePanel">
+				<div>
+					<div class="pageViewContainer">
+						<p class="pageView">100K  PAGEVIEWS</p>
+					</div>
+					<div class="slideContainer">
+						<input type="range" min="0" max="5" value="2" class="sliderPrice" id="myRange">
+					</div>
+					<div class="priceContainer">
+						<p class="price"></p>
+					</div>
+					<div class="subscription">
+						<p>Monthly Billing</p>
+						<label class="switch">
+							<input id="toggleSubscription" type="checkbox">
+							<span class="slider round"></span>
+						</label>
+						<p>Yearly Billing <span class="discountSpan">-25%</span></p>
+					</div>
+				</div>
+				<hr />
+				<div>
+					<div class="listContainer">
+						<ul>
+							<li>
+								<img src="./images/icon-check.svg" alt="checkmark"> 
+								Unlimited websites
+							</li>
+							<li>
+								<img src="./images/icon-check.svg" alt="checkmark"> 
+								100% data ownership
+							</li>
+							<li>
+								<img src="./images/icon-check.svg" alt="checkmark"> 
+								Email reports
+							</li>
+						</ul>
+					</div>
+					<div class="buttonContainer">
+						<a href="#">
+							<button id="btnNotify">Start my trial</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- pricePanel ends -->
 
-		Unlimited websites
-		100% data ownership
-		Email reports
-
-		Start my trial
+		</main>
 		
-		<footer class="attribution">
+		<footer>
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
 			Coded by <a href="#">Halil ALGUL</a>.
 		</footer>

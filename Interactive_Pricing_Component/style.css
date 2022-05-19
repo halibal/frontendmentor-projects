@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
 :root {
     /* primary colors */
 
@@ -31,9 +33,23 @@
     --fs-px: 15px;
 
     /* font family */
-    -ff-manrope: 'Manrope', sans-serif;
+    --ff-manrope: 'Manrope', sans-serif;
 
     /* font weight: 600-800 */
+}
+
+/* elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: hsl(230, 100%, 99%) url(./images/bg-pattern.svg) no-repeat;
+    min-height: 100vh;
+    font-family: var(--ff-manrope);
 }
 
 a {
@@ -41,8 +57,107 @@ a {
 }
 
 footer {
+    width: 100%;
     position: absolute;
     bottom: 0;
     text-align: center;
     font-size: 11px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 10px auto;
+}
+
+main {
+    margin: auto;
+    width: 325px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* IDs */
+
+#toggleSubscription {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#toggleSubscription:checked+.slider {
+    background-color: #2196F3;
+}
+
+#toggleSubscription:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+#toggleSubscription:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Classes */
+
+.pricePanel {
+    background-color: var(--cl-white);
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.textPanel {
+    display: flex;
+    margin: 50px 0 30px 0;
+    background: url(./images/pattern-circles.svg) no-repeat top;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0 40px 0;
+}
+
+.textPanel>p {
+    color: var(--cl-gblue);
+    font-size: 0.8rem;
 }
