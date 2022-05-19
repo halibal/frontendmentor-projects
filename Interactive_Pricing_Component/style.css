@@ -45,6 +45,16 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--cl-lred);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--cl-lred);
+}
+
 body {
     position: relative;
     background: var(--cl-vpblue) url(./images/bg-pattern.svg) no-repeat;
@@ -52,8 +62,8 @@ body {
     font-family: var(--ff-manrope);
 }
 
-a {
-    text-decoration: none;
+button {
+    cursor: pointer;
 }
 
 footer {
@@ -75,7 +85,7 @@ hr {
 }
 
 main {
-    margin: auto;
+    margin: 50px auto 85px auto;
     width: 325px;
     text-align: center;
 }
@@ -118,18 +128,6 @@ ul {
     border-radius: 2rem;
 }
 
-.discountSpan {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    border-radius: 1rem;
-    background-color: var(--cl-lgred);
-    color: var(--cl-lred);
-    margin: 2px 10px;
-    padding: 1px 5px;
-    font-size: 0.6rem;
-}
-
 .listContainer {
     margin: 20px;
     font-size: 0.75rem;
@@ -155,6 +153,7 @@ ul {
 
 .pageViewContainer {
     margin-bottom: 35px;
+    order: 1;
 }
 
 .pricePanel {
@@ -165,20 +164,28 @@ ul {
     box-shadow: 0 10px 20px var(--cl-lgblue1);
 }
 
-.priceContainer {
+.priceContainerDesktop {
+    display: none;
+}
+
+.priceContainerMobile,
+.priceContainerDesktop {
     margin: 25px auto 0 auto;
     font-size: 2rem;
     color: black;
     font-weight: 700;
+    order: 3;
 }
 
-.priceContainer>p {
+.priceContainerMobile>p,
+.priceContainerDesktop>p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.priceContainer>p>span {
+.priceContainerMobile>p>span,
+.priceContainerDesktop>p>span {
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--cl-gblue);
@@ -228,6 +235,9 @@ ul {
 
 /* toggle slider ends */
 
+.slideContainer {
+    order: 2;
+}
 
 /* price slider start */
 .sliderPrice {
@@ -259,15 +269,31 @@ ul {
 
 /* price slider ends */
 
-.subscription {
+.subscriptionContainer {
     display: flex;
     justify-content: flex-end;
     font-size: 0.8rem;
     margin: 40px 10px;
+    order: 4;
 }
 
-.subscription * {
+.subscriptionContainer * {
     margin: 0 3px;
+}
+
+.discountSpan {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 1rem;
+    background-color: var(--cl-lgred);
+    color: var(--cl-lred);
+    padding: 1px 10px;
+    font-size: 0.6rem;
+}
+
+.discountSpan span {
+    display: none;
 }
 
 .textPanel {
@@ -283,4 +309,106 @@ ul {
     color: var(--cl-gblue);
     font-size: 0.8rem;
     line-height: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        background: var(--cl-vpblue) url(./images/bg-pattern.svg) no-repeat;
+        background-size: contain;
+    }
+
+    hr {
+        border: 1px solid hsl(224, 65%, 95%, 0.5);
+        ;
+    }
+
+    main {
+        width: 550px;
+    }
+
+    .textPanel {
+        flex-direction: column;
+        padding: 35px 0 50px 0;
+        margin: 0 0 25px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .textPanel br {
+        display: none;
+    }
+
+    .textPanel p {
+        font-size: 0.95rem;
+    }
+
+    .subscriptionContainer {
+        margin: 50px 10px 40px 10px;
+        width: 85%;
+    }
+
+    .subscriptionContainer p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricePanel {
+        padding: 30px 0 0 0;
+    }
+
+    .priceContainerMobile {
+        display: none;
+    }
+
+    .pageViewContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .priceContainerDesktop {
+        display: initial;
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .priceContainerDesktop>p {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .discountSpan {
+        padding: 0 3px;
+    }
+
+    .discountSpan span {
+        display: initial;
+    }
+
+    .listAndButtonContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .listContainer {
+        margin: 0;
+    }
+
+    .listContainer ul {
+        margin: 0;
+    }
+
+    .listContainer li {
+        text-align: start;
+    }
 }
