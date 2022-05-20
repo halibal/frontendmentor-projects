@@ -77,6 +77,7 @@ n2.toFixed(3) = 1.667;
 
 - [W3Schools | Range Slider](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
 - [Tutorials Point | Format A Number](https://www.tutorialspoint.com/How-to-format-a-number-with-two-decimals-in-JavaScript#:~:text=Use%20the%20toFixed()%20method,the%20right%20of%20the%20decimal.)
+- [Stackoverflow | How To Style HTML5 Range Input](https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider)
 
 ## Author
 
