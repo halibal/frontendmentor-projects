@@ -1,9 +1,10 @@
 const uploadDate1 = document.getElementById('uploadDate1');
 const uploadDate2 = document.getElementById('uploadDate2');
 const uploadDate3 = document.getElementById('uploadDate3');
+const uploadDate4 = document.getElementById('uploadDate4');
 
 let currentDate = new Date()
-let uploadDates = [uploadDate1, uploadDate2, uploadDate3]
+let uploadDates = [uploadDate1, uploadDate2, uploadDate3, uploadDate4]
 
 let targetDate1 = {
     day: 12,
