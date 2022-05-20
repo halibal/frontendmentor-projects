@@ -44,8 +44,7 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
  <img src="./images/desktop-version.png">
  <img src="./images/desktop-version-active.png">
  <img src="./images/mobile-version.png">
- <img src="./images/mobile-version-opened.png">
- <img src="./images/mobile-version-expanded.png">
+ <img src="./images/mobile-version-active.png">
 </p>
 
 ### Links
@@ -69,7 +68,7 @@ var n1 = 1.33333;
 var n2 = 5.6677;
 
 n1.toFixed(2) = 1.33;
-n2.toFixed(3) = 1.667;
+n2.toFixed(3) = 5.667;
 
 ```
 
