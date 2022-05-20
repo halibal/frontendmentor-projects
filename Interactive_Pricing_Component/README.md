@@ -62,10 +62,21 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Useful Codes
 
+```JavaScript
+// toFixed(parameter) method allows you to specify the number of digits to the right of the decimal;
+
+var n1 = 1.33333;
+var n2 = 5.6677;
+
+n1.toFixed(2) = 1.33;
+n2.toFixed(3) = 1.667;
+
+```
+
 ### Useful Resources
 
 - [W3Schools | Range Slider](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
-- []()
+- [Tutorials Point | Format A Number](https://www.tutorialspoint.com/How-to-format-a-number-with-two-decimals-in-JavaScript#:~:text=Use%20the%20toFixed()%20method,the%20right%20of%20the%20decimal.)
 
 ## Author
 

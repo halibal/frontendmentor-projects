@@ -128,6 +128,10 @@ ul {
     border-radius: 2rem;
 }
 
+.buttonContainer button:hover {
+    color: var(--cl-white);
+}
+
 .listContainer {
     margin: 20px;
     font-size: 0.75rem;
