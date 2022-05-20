@@ -49,9 +49,9 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Links
 
-- Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-html-css-js-BJE47Xewq)
+- Solution URL: [Frontend Mentor | My Solution](https://www.frontendmentor.io/solutions/interactive-pricing-component-with-html-css-js-jOAgCRAUYy)
   
-- Live Site URL: [Halibal | Interactive Pricing Component](https://halibal.github.io/frontendmentor-projects/Intro_Section_With_Dropdown_Navigation/index.html)
+- Live Site URL: [Halibal | Interactive Pricing Component](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8)
 
 ### Built with
 
